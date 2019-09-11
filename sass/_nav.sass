@@ -1,0 +1,97 @@
+*
+    margin: 0
+    padding: 0
+.main-nav
+    position: fixed
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding: 0.5rem 1rem
+    top: 0
+    left: 0
+    right: 0
+    font: 600 0.875rem/2rem "Raleway", sans-serif
+    box-shadow: 0px 3px 5px 0px rgba(230,230,230,1)
+    z-index: 10
+    background-color: #fff
+   
+.main-nav__container
+    height: 0
+    flex-basis: 100%
+    flex-grow: 1
+    overflow: hidden
+    transition: height .3s ease-in-out
+.main-nav__container--show
+    height: 204px
+
+
+.main-nav__social-icons
+    display: none
+.main-nav__nav-bar
+    list-style: none
+    margin-top: 0.75rem
+    
+.main-nav__nav-bar__element a
+    text-decoration: none
+    color: $dark   
+    padding: 0 0.75rem
+    
+.main-nav__logo-image
+    padding-top: 0.3rem
+    padding-bottom: 0.3rem
+    margin-right: 1rem
+    line-height: 1
+.main-nav__logo-image img
+    width: 7.5rem
+    height: 2rem
+    
+.main-nav__mobile-btn
+    border: none
+    cursor: pointer
+    background-color: #fff
+    padding: 0.25rem 0.75rem
+.main-nav__mobile-btn__box
+    display: inline-block
+    width: 28px
+    height: 16px
+    position: relative
+
+
+@mixin hamburger-line
+    position: absolute
+    width: 100%                        // hamburger's MIXIN
+    height: 4px
+    background-color: #000 
+    border-radius: 20%
+
+
+.main-nav__mobile-btn__box__inner
+    @include hamburger-line
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    transition: background-color .1s .2s ease-in-out
+.main-nav__mobile-btn__box__inner::before,
+.main-nav__mobile-btn__box__inner::after
+    content: ''
+    @include hamburger-line
+    left: 0
+    transition: transform .2s .2s ease-in-out
+
+
+.main-nav__mobile-btn__box__inner::after
+    top: 10px
+.main-nav__mobile-btn__box__inner::before
+    top: -10px
+
+
+
+.main-nav__mobile-btn--active .main-nav__mobile-btn__box__inner
+    background-color: transparent
+.main-nav__mobile-btn--active .main-nav__mobile-btn__box__inner::before
+    transform: translateY(10px) rotate(-45deg) 
+.main-nav__mobile-btn--active .main-nav__mobile-btn__box__inner::after
+    transform: translateY(-10px) rotate(45deg) 
+
+
