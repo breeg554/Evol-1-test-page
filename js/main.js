@@ -6,6 +6,13 @@ mobileBtn.addEventListener("click", () => {
   toggleMenu.classList.toggle("main-nav__container--show");
 });
 
+const mainNav = document.querySelector(".main-nav");
+window.addEventListener("scroll", () => {
+  if (window.innerWidth >= 992 && window.scrollY <= 60) {
+    mainNav.classList.add("main-nav--highest");
+  } else mainNav.classList.remove("main-nav--highest");
+});
+
 $(document).ready(function() {
   $(".customers-slider__content__swiper").slick({
     dots: false,
