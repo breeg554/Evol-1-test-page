@@ -34,7 +34,7 @@ modalCloseBtn.addEventListener("click", () => {
   modalContainerContent.classList.remove("modal-container--active");
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".customers-slider__content__swiper").slick({
     dots: false,
     infinite: true,
@@ -44,8 +44,7 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
