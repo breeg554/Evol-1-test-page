@@ -5,7 +5,10 @@ mobileBtn.addEventListener("click", () => {
   mobileBtn.classList.toggle("main-nav__mobile-btn--active"); //mobile menu
   toggleMenu.classList.toggle("main-nav__container--show");
 });
-
+toggleMenu.addEventListener("click", () => {
+  mobileBtn.classList.remove("main-nav__mobile-btn--active"); //mobile menu
+  toggleMenu.classList.remove("main-nav__container--show");
+})
 const mainNav = document.querySelector(".main-nav");
 window.addEventListener("scroll", () => {
   if (window.innerWidth >= 992 && window.scrollY <= 60) {
@@ -45,28 +48,28 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     arrows: false,
     responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
       }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
     ]
   });
 });

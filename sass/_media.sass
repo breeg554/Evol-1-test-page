@@ -1,11 +1,11 @@
 @media (min-width: 580px)
-    .header__content,.services,.about-design,.about-optimization,.modal__content__text,.pricing
+    .header__content,.services,.about-design,.about-optimization,.modal__content__text,.pricing,.request .container
         max-width: 540px
     .modal-row
         max-width: 39rem
 
 @media (min-width: 780px)
-    .header__content, .services,.about-design,.about-optimization,.pricing
+    .header__content, .services,.about-design,.about-optimization,.pricing,.request .container
         max-width: 720px
     .header h1
         font-size: 3rem
@@ -128,7 +128,14 @@
         margin-left: 1rem
         width: 17rem
         max-width: 100%
-    
+    .request .container
+        max-width: 960px
+        display: flex
+    .request__content,.request__form
+        max-width: 50%
+    .request__content
+        margin-bottom: 0
+        margin-top: 1.5rem
 
 
 @media (min-width: 1200px)
@@ -169,3 +176,11 @@
     .pricing__cards__card
         margin-right: 1.625rem
         margin-left: 1.625rem
+    .request .container
+        max-width: 1140px
+    .request__content
+        margin-right: 1.5rem
+        margin-left: 6rem
+    .request__form
+        margin-right: 6rem
+        margin-left: 1.5rem
