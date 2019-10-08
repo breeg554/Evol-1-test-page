@@ -1,0 +1,65 @@
+.video-frame
+    padding: 6.8rem 15px 6.1rem 15px
+    margin: 0 auto
+    text-align: center
+.video-frame__heading
+    @include h2   
+    margin-bottom: 3rem
+.video-frame__content
+    margin: 0 auto
+.video-frame__content .video-container
+    margin-bottom: 2.25rem
+    position: relative
+    
+.video-frame__content__img
+    border-radius: 0.5rem
+    max-width: 100%
+    height: auto
+    cursor: pointer
+.video-frame__content__play-btn,.video-frame__content__play-btn .triangle,.video-frame__content__play-btn::before,.video-frame__content__play-btn::after
+    position: absolute
+    top: 50%
+    transform: translate(-50%,-50%)
+.video-frame__content__play-btn
+    left: 50%
+    width: 2rem
+    height: 2.75rem
+    padding: 1.125rem 1.25rem 1.125rem 1.75rem
+    .triangle
+        width: 0
+        height: 0
+        left: 55%
+        border-top: 1rem solid transparent
+        border-bottom: 1rem solid transparent
+        border-left: 1.6rem solid #fff
+        z-index: 2
+    &::before,&::after
+        left: 50%
+        content: ""
+        width: 4.75rem
+        height: 4.75rem
+        background-color: $blue
+        border-radius: 50%  
+    &::before
+        z-index: 0
+    &::after
+       z-index: 1
+       animation: scale 1.6s infinite linear
+.video-frame__content__text
+    @include paragraph
+    span
+        font-weight: bolder
+@keyframes scale
+    0%
+        opacity: 1
+        transform: translate(-50%,-50%) scale(1)
+    40%
+        opacity: 0.4
+        transform: translate(-50%,-50%) scale(1.3)
+
+    100%
+        opacity: 0
+        transform: translate(-50%,-50%) scale(1.6)
+        
+
+
