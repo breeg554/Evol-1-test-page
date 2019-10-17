@@ -63,7 +63,7 @@
             </li>
           </ul>
           <div class="modal__content__text__btn modal__content__text__btn--first">
-            <a href="#">Request</a>
+            <a href="#request">Request</a>
           </div>
           <div class="modal__content__text__btn  modal__content__text__btn--second">
             <a href="#">Back</a>
@@ -72,8 +72,11 @@
       </div>
     </div>
   </div>
-
   <!-- modal end -->
+  <!-- return btn -->
+  <button class="return-btn"><a href="#header"></a></button>
+  <!-- return btn end -->
+
   <!-- Navigation -->
   <nav class="main-nav main-nav--highest">
     <a href="index.html" class="main-nav__logo-image">
@@ -285,7 +288,7 @@
           </li>
         </ul>
         <div class="button-wrapper">
-          <a href="#" class="request-btn">Request</a>
+          <a href="#request" class="request-btn">Request</a>
         </div>
       </article>
       <article class="pricing__cards__card">
@@ -319,7 +322,7 @@
           </li>
         </ul>
         <div class="button-wrapper">
-          <a href="#" class="request-btn">Request</a>
+          <a href="#request" class="request-btn">Request</a>
         </div>
       </article>
       <article class="pricing__cards__card">
@@ -356,7 +359,7 @@
           </li>
         </ul>
         <div class="button-wrapper">
-          <a href="#" class="request-btn">Request</a>
+          <a href="#request" class="request-btn">Request</a>
         </div>
       </article>
     </div>
@@ -443,11 +446,65 @@
           Customers</span> and
         will help you understand why your startup needs Evolo in this highly competitive market</p>
     </div>
+    <div class="video-frame__popUp">
+      <div class="button-cotainer">
+        <button class="video-frame__popUp__close">x</button>
+      </div>
+      <!-- <iframe id="player" src="https://www.youtube.com/embed/fLCjQJCekTs?autoplay=1" allowfullscreen></iframe> -->
+      <div id="player"></div>
+    </div>
   </section>
+  <!-- video frame end -->
+  <!-- people slider -->
+  <section class="people-slider">
+    <div class="main-container">
+      <div class="people-section__img">
+        <img src="images/people-slider/testimonials-2-men-talking.svg" alt="men talking">
+      </div>
+      <section class="slider">
+        <h2>Testimonials</h2>
+        <div class="container">
+          <div class="slider__body">
+            <div class="slider__body__slide slide1">
+              <img src="./images/people-slider/testimonial-1.svg" alt="slide image">
+              <p class="slider__body__slide__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Minus eos, voluptate eaque consequatur
+                praesentium itaque animi illum quia quasi rerum.</p>
+              <p class="slider__body__slide__author">Marsha Singer - Developer</p>
+            </div>
+            <div class="slider__body__slide slide2">
+              <img src="./images/people-slider/testimonial-2.svg" alt="slide image">
+              <p class="slider__body__slide__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Minus eos, voluptate eaque consequatur
+                praesentium itaque animi illum quia quasi rerum.</p>
+              <p class="slider__body__slide__author">Roy Smith - Marketer</p>
+            </div>
+            <div class="slider__body__slide slide3">
+              <img src="./images/people-slider/testimonial-3.svg" alt="slide image">
+              <p class="slider__body__slide__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Minus eos, voluptate eaque consequatur
+                praesentium itaque animi illum quia quasi rerum.</p>
+              <p class="slider__body__slide__author">Jude Thorn - Desinger</p>
+            </div>
+
+
+          </div>
+          <div class="slider__body__btn slider__body__next"></div>
+          <div class="slider__body__btn slider__body__prev"></div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- people slider end -->
+
+
+
   <script src="https://kit.fontawesome.com/a90e667ff5.js"></script>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="slick/slick.min.js"></script>
+  <script src="js/people-slider.js"></script>
   <script src="js/main.js"></script>
 </body>
 

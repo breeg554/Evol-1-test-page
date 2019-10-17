@@ -10,13 +10,24 @@ toggleMenu.addEventListener("click", () => {
   toggleMenu.classList.remove("main-nav__container--show");
 })
 const mainNav = document.querySelector(".main-nav");
+const returnBtn = document.querySelector(".return-btn");  //fixed btn
+const header = document.querySelector(".header");
+
+
 window.addEventListener("scroll", () => {
   if (window.innerWidth >= 992 && window.scrollY <= 60) {
     //change fixed menu
     mainNav.classList.add("main-nav--highest");
   } else mainNav.classList.remove("main-nav--highest");
-});
 
+});
+// -----------------------
+
+
+
+
+
+//page modal
 const modalOpenBtn = document.querySelectorAll(".lightbox-btn");
 const backgroundModal = document.querySelector(".modal");
 const modalCloseBtn = document.querySelector(".modal__content__btn");
@@ -37,6 +48,54 @@ modalCloseBtn.addEventListener("click", () => {
   modalContainerContent.classList.remove("modal-container--active");
 });
 
+
+// video popUp
+const videoLink = document.querySelector(".video-frame__content__reference")
+const openVideo = document.querySelector(".video-frame__content .video-container");
+const closeVideo = document.querySelector(".video-frame__popUp__close");
+const popUpVideo = document.querySelector(".video-frame__popUp");
+
+
+
+videoLink.addEventListener("click", (e) => {
+  if (window.innerWidth >= 730) {
+    e.preventDefault();
+    popUpVideo.style.display = "flex";
+  }
+})
+closeVideo.addEventListener("click", () => {
+  popUpVideo.style.display = "none";
+  pauseVideo();
+})
+
+let tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+let firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+let player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '100%',
+    width: '100%',
+    videoId: 'M7lc1UVf-VE',
+
+  });
+}
+
+function pauseVideo() {
+  player.pauseVideo();
+}
+
+// --------------------------
+
+
+
+
+
+
+
+// ---------------slick swiper------------------
 $(document).ready(function () {
   $(".customers-slider__content__swiper").slick({
     dots: false,

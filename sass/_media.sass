@@ -1,11 +1,11 @@
 @media (min-width: 580px)
-    .header__content,.services,.about-design,.about-optimization,.modal__content__text,.pricing,.request .container,.video-frame__content
+    .header__content,.services,.about-design,.about-optimization,.modal__content__text,.pricing,.request .container,.video-frame__content,.people-slider .main-container
         max-width: 540px
     .modal-row
         max-width: 39rem
 
 @media (min-width: 780px)
-    .header__content, .services,.about-design,.about-optimization,.pricing,.request .container,.video-frame__content
+    .header__content, .services,.about-design,.about-optimization,.pricing,.request .container,.video-frame__content,.people-slider .main-container
         max-width: 720px
     .header h1
         font-size: 3rem
@@ -24,6 +24,12 @@
     .video-frame__content__text
         width: 85%
         margin: 0 auto
+    .slider .container
+        width: 70%
+        margin-right: auto
+        margin-left: auto
+    
+    
     
 
 @media (min-width: 992px)
@@ -146,7 +152,19 @@
         margin: 0 auto
     .video-frame__content__text
         width: 65%
-
+    .people-slider .main-container
+        max-width: 960px
+        display: flex
+    .people-section__img,.slider
+        flex-basis: 50%
+        max-width: 50%
+    .slider
+        margin-left: 2rem
+    .people-section__img
+        margin-bottom: 0
+    .people-slider
+        padding-bottom: 7.5rem
+   
 @media (min-width: 1200px)
     .header__content
         padding-top: 12.5rem
@@ -197,3 +215,7 @@
         max-width: 1140px
     .video-frame__content__text
         width: 55%
+    .people-slider .main-container
+        max-width: 1140px
+    .slider h2
+        margin-top: 3.5rem

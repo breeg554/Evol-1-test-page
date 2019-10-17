@@ -2,6 +2,8 @@
     padding: 6.8rem 15px 6.1rem 15px
     margin: 0 auto
     text-align: center
+   
+    
 .video-frame__heading
     @include h2   
     margin-bottom: 3rem
@@ -61,5 +63,36 @@
         opacity: 0
         transform: translate(-50%,-50%) scale(1.6)
         
-
-
+.video-frame__popUp
+    
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,0.4)
+    width: 100%
+    height: 100%
+    z-index: 20  
+    
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    display: none
+.video-frame__popUp .button-cotainer
+    width: 100%
+    max-width: 900px
+    text-align: right
+.video-frame__popUp__close
+    padding: 5px 0 5px 5px
+    border: none
+    background-color: transparent
+    color: #fff
+    font-family: "Raleway", sans-serif
+    font-size: 20px
+    cursor: pointer
+.video-frame__popUp iframe
+    background-color: transparent
+    width: 100%
+    height: 100%
+    max-width: 900px
+    max-height: 500px
+    
