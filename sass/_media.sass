@@ -1,11 +1,15 @@
 @media (min-width: 580px)
-    .header__content,.services,.about-design,.about-optimization,.modal__content__text,.pricing,.request .container,.video-frame__content,.people-slider .main-container
+    .header__content,.services,.about-design,.about-optimization,
+    .modal__content__text,.pricing,.request .container,.video-frame__content,
+    .people-slider .main-container,.about__heading,.about__members
         max-width: 540px
     .modal-row
         max-width: 39rem
 
 @media (min-width: 780px)
-    .header__content, .services,.about-design,.about-optimization,.pricing,.request .container,.video-frame__content,.people-slider .main-container
+    .header__content, .services,.about-design,.about-optimization,
+    .pricing,.request .container,.video-frame__content,
+    .people-slider .main-container,.about__heading,.about__members
         max-width: 720px
     .header h1
         font-size: 3rem
@@ -28,6 +32,18 @@
         width: 70%
         margin-right: auto
         margin-left: auto
+    .about__heading p
+        width: 85%
+        margin-right: auto
+        margin-left: auto
+    .about__members
+        display: flex
+        flex-wrap: wrap
+        justify-content: center 
+    .about__members__member
+
+        width: 50%
+        
     
     
     
@@ -164,6 +180,14 @@
         margin-bottom: 0
     .people-slider
         padding-bottom: 7.5rem
+    .about__members,.about__heading
+        max-width: 960px
+    .about__heading p
+        width: 65%
+    .about__members__member .img-container img
+        transition: 0.3s ease-in-out
+    .about__members__member .img-container:hover img
+        transform: scale(1.2)
    
 @media (min-width: 1200px)
     .header__content
@@ -219,3 +243,7 @@
         max-width: 1140px
     .slider h2
         margin-top: 3.5rem
+    .about__members,.about__heading
+        max-width: 1140px
+    .about__heading p
+        width: 55%

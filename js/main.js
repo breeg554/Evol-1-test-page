@@ -15,6 +15,7 @@ const header = document.querySelector(".header");
 
 
 window.addEventListener("scroll", () => {
+  
   if (window.innerWidth >= 992 && window.scrollY <= 60) {
     //change fixed menu
     mainNav.classList.add("main-nav--highest");
@@ -38,7 +39,7 @@ modalOpenBtn.forEach(btn =>
   btn.addEventListener("click", () => {
     modalRowContent.classList.add("modal-row--active");
     modalContainerContent.classList.add("modal-container--active");
-    modalContainerContent.style.top = `${window.scrollY}px`;
+    modalContainerContent.style.top = `${window.pageYOffset}px`;
     backgroundModal.classList.add("modal--active");
   })
 );
