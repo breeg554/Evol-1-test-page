@@ -111,7 +111,7 @@
     </div>
   </nav>
   <!-- Nav-Bar End -->
-  <!-- Header -->
+
   <header class="header" id="header">
     <div class="header__content">
       <div class="text-container">
@@ -133,8 +133,7 @@
       </div>
     </div>
   </header>
-  <!-- Header end -->
-  <!-- Customers slider -->
+
   <div class="customers-slider">
     <div class="container">
       <h5>Trusted By</h5>
@@ -162,8 +161,7 @@
       </div>
     </div>
   </div>
-  <!-- Slider end -->
-  <!-- Service -->
+
   <section class="services" id="services">
     <div class="services__heading">
       <h2>Business Growth Services</h2>
@@ -205,8 +203,7 @@
       </article>
     </div>
   </section>
-  <!-- Services end -->
-  <!-- About design -->
+
   <section class="about-design">
     <div class="about-design__content">
       <h2>Design And Plan Your Business Growth Steps</h2>
@@ -215,14 +212,13 @@
         growth strategy. Evolo team is eager to advise you on the best
         opportunities that you should look into
       </p>
-      <div  class=" lightbox-btn">Lightbox</div>
+      <div class=" lightbox-btn">Lightbox</div>
     </div>
     <div class="about-design__image">
       <img src="images/details-1-office-worker.svg" alt="office workers art" />
     </div>
   </section>
-  <!-- About design end -->
-  <!-- About optymization -->
+
   <section class="about-optimization">
     <div class="about-optymization__image">
       <img src="images/details-2-office-team-work.svg" alt="office workers art" />
@@ -249,11 +245,10 @@
           </div>
         </li>
       </ul>
-      <div  class="lightbox-btn">Lightbox</div>
+      <div class="lightbox-btn">Lightbox</div>
     </div>
   </section>
-  <!-- About optymization end -->
-  <!-- Pricing -->
+
   <section id="pricing" class="pricing">
     <div class="pricing__content">
       <h2>Multiple Pricing Options</h2>
@@ -370,8 +365,7 @@
       </article>
     </div>
   </section>
-  <!-- pircing end -->
-  <!-- form -->
+
   <section class="request" id="request">
     <div class="container">
       <div class="request__content">
@@ -433,8 +427,7 @@
       </form>
     </div>
   </section>
-  <!-- form end -->
-  <!-- video frame -->
+
   <section class="video-frame">
     <h2 class="video-frame__heading">Check Out The Video</h2>
     <div class="video-frame__content">
@@ -460,8 +453,7 @@
       <div id="player"></div>
     </div>
   </section>
-  <!-- video frame end -->
-  <!-- people slider -->
+
   <section class="people-slider">
     <div class="main-container">
       <div class="people-section__img">
@@ -502,12 +494,12 @@
     </div>
   </section>
 
-  <!-- people slider end -->
-  <!-- about the team -->
+
   <section id='about' class="about">
     <header class="about__heading">
       <h2>About The Team</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique quod a numquam veniam Lorem ipsum dolor sit amet Lorem, ipsum dolor.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique quod a numquam veniam Lorem ipsum
+        dolor sit amet Lorem, ipsum dolor.</p>
     </header>
     <div class="about__members">
       <article class="about__members__member">
@@ -556,24 +548,74 @@
         </div>
       </article>
       <article class="about__members__member">
-          <div class="img-container">
-            <img src="images/team-members/team-member-4.svg" alt="team member" class="about__members__member__img">
-          </div>
-          <p class="name">Mary Villalonga</p>
-          <p class="job">Product Manager</p>
-          <div class="social-icons">
-            <span class="fab fa-facebook-f">
-              <a href="https://www.facebook.com/"></a>
-            </span>
-            <span class="fab fa-twitter">
-              <a href="https://twitter.com/?lang=pl"></a>
-            </span>
-          </div>
-        </article>
+        <div class="img-container">
+          <img src="images/team-members/team-member-4.svg" alt="team member" class="about__members__member__img">
+        </div>
+        <p class="name">Mary Villalonga</p>
+        <p class="job">Product Manager</p>
+        <div class="social-icons">
+          <span class="fab fa-facebook-f">
+            <a href="https://www.facebook.com/"></a>
+          </span>
+          <span class="fab fa-twitter">
+            <a href="https://twitter.com/?lang=pl"></a>
+          </span>
+        </div>
+      </article>
     </div>
   </section>
 
-
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <header class="contact__header">
+        <h2>Contact Information</h2>
+        <ul class="contact__header__list">
+          <li>Lorem ipsum dolor sit elit. Tenetur ipsa voluptatum unde nostrum nam?</li>
+          <li>
+            <i class="fas fa-map-marker-alt">
+  
+            </i>
+            22 Innovative Area, San Francisco, CA 94043, US
+          </li>
+          <li>
+            <i class="fas fa-phone">
+  
+            </i>
+            <a href="#">+81 720 2212</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope">
+  
+            </i>
+            <a href="www.gmail.com">email@email.com</a>
+          </li>
+        </ul>
+      </header>
+      <div class="contact__content">
+        <div class="contact__content__map">
+          <div id="map"></div>
+        </div>
+        
+          <form class="contact__content__form form" novalidate>
+            <input class="form__child" type="text" name="name" placeholder="Full name">  <!--- Styled in _request file--->
+            <input class="form__child" type="email" name="email" placeholder="Email">  <!--- Styled in _request file--->
+            <textarea class="form__child"  name="message" placeholder="Your message" wrap='hard' ></textarea>
+            <div class="checkbox-container ">
+              <input type="checkbox" name="agree-terms">
+              <span>I have read and agree with Evolo's stated</span>
+              <a href="#">Privacy Policy</a>
+              <span>and</span>
+              <a href="#">Terms & Conditions</a>
+            </div>                                 <!--- Styled in _request file--->
+            <button type="submit" class="form__submit ">Request</button><!--- Styled in _request file--->
+          </form>
+        
+      </div>
+    </div>
+  </section>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGrUDf4_uzAgrXWqWg_5-eI7wEo7jQ26I&callback=initMap"
+    async defer></script>
+  <script src="js/map.js"></script>
   <script src="https://kit.fontawesome.com/a90e667ff5.js"></script>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

@@ -1,0 +1,43 @@
+.contact
+    padding: 7rem 15px 6.5rem 15px
+    background-image: url(../images/contact-background.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+.contact-container
+    width: 100%
+    padding: 0
+    margin: 0 auto
+.contact__header
+    text-align: center
+    margin: 0 auto
+    h2
+        @include h2
+        margin-bottom: 1rem
+.contact__header__list
+    margin-bottom: 3.75rem
+    list-style: none
+
+    li
+        @include paragraph
+        line-height: 1.5rem
+        font-size: 1rem
+        margin-bottom: 0.5rem
+        display: block
+
+        i
+            color: $blue
+        a
+            text-decoration: none
+            color: $blue
+#map
+    width: 100%
+    padding-bottom: 70%
+    margin-bottom: 4rem
+    border-radius: 0.2rem
+    overflow: hidden
+.contact__content__form
+    max-width: 100%
+
+.form__child[name='message']
+    height: 128px

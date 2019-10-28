@@ -1,7 +1,7 @@
 @media (min-width: 580px)
     .header__content,.services,.about-design,.about-optimization,
     .modal__content__text,.pricing,.request .container,.video-frame__content,
-    .people-slider .main-container,.about__heading,.about__members
+    .people-slider .main-container,.about__heading,.about__members,.contact-container
         max-width: 540px
     .modal-row
         max-width: 39rem
@@ -9,18 +9,18 @@
 @media (min-width: 780px)
     .header__content, .services,.about-design,.about-optimization,
     .pricing,.request .container,.video-frame__content,
-    .people-slider .main-container,.about__heading,.about__members
+    .people-slider .main-container,.about__heading,.about__members,.contact-container
         max-width: 720px
     .header h1
         font-size: 3rem
         line-height: 3.5rem
     .customers-slider
         padding-top: 3rem
-        padding-bottom: 2.875rem   
+        padding-bottom: 2.875rem
     .services__heading p
         width: 85%
-        margin-right:  auto
-        margin-left: auto 
+        margin-right: auto
+        margin-left: auto
     .pricing__content p
         width: 85%
         margin-right: auto
@@ -39,15 +39,14 @@
     .about__members
         display: flex
         flex-wrap: wrap
-        justify-content: center 
+        justify-content: center
     .about__members__member
-
         width: 50%
-        
-    
-    
-    
-
+    .contact__header__list li:not(:first-child)
+        display: inline-block
+    .contact__header__list li
+        margin-right: 0.5rem
+        margin-left: 0.5rem
 @media (min-width: 992px)
     .modal-row
         max-width: 960px
@@ -112,7 +111,7 @@
         height: auto
         flex-basis: auto
         display: flex
-        
+
     .main-nav__nav-bar
         display: flex
         margin-top: 0
@@ -141,7 +140,7 @@
     .about-optymization__content
         margin-left: 15px
     .about-optymization__image
-        margin-right:  15px
+        margin-right: 15px
     .pricing
         max-width: 920px
     .pricing__content p
@@ -188,7 +187,21 @@
         transition: 0.3s ease-in-out
     .about__members__member .img-container:hover img
         transform: scale(1.2)
-   
+    .contact-container
+        max-width: 960px
+    .contact__header
+        width: 100%
+    .contact__content
+        display: flex
+        width: 100%
+    .contact__content__map,.contact__content__form
+        padding-left: 15px
+        padding-right: 15px
+        max-width: 50%
+    .contact__content__map
+        flex-basis: 50%
+    #map
+        margin-bottom: 0
 @media (min-width: 1200px)
     .header__content
         padding-top: 12.5rem
@@ -247,3 +260,5 @@
         max-width: 1140px
     .about__heading p
         width: 55%
+    .contact-container
+        max-width: 1140px
