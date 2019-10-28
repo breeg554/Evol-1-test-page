@@ -573,19 +573,19 @@
           <li>Lorem ipsum dolor sit elit. Tenetur ipsa voluptatum unde nostrum nam?</li>
           <li>
             <i class="fas fa-map-marker-alt">
-  
+
             </i>
             22 Innovative Area, San Francisco, CA 94043, US
           </li>
           <li>
             <i class="fas fa-phone">
-  
+
             </i>
             <a href="#">+81 720 2212</a>
           </li>
           <li>
             <i class="fas fa-envelope">
-  
+
             </i>
             <a href="www.gmail.com">email@email.com</a>
           </li>
@@ -593,29 +593,31 @@
       </header>
       <div class="contact__content">
         <div class="contact__content__map">
-          <div id="map"></div>
+          <a href="https://www.google.pl/maps/place/Warszawa/@52.2330653,20.9211126,11z/data=!3m1!4b1!4m5!3m4!1s0x471ecc669a869f01:0x72f0be2a88ead3fc!8m2!3d52.2296756!4d21.0122287" id="map" target="_blank"></a>
         </div>
-        
-          <form class="contact__content__form form" novalidate>
-            <input class="form__child" type="text" name="name" placeholder="Full name">  <!--- Styled in _request file--->
-            <input class="form__child" type="email" name="email" placeholder="Email">  <!--- Styled in _request file--->
-            <textarea class="form__child"  name="message" placeholder="Your message" wrap='hard' ></textarea>
-            <div class="checkbox-container ">
-              <input type="checkbox" name="agree-terms">
-              <span>I have read and agree with Evolo's stated</span>
-              <a href="#">Privacy Policy</a>
-              <span>and</span>
-              <a href="#">Terms & Conditions</a>
-            </div>                                 <!--- Styled in _request file--->
-            <button type="submit" class="form__submit ">Request</button><!--- Styled in _request file--->
-          </form>
-        
+
+        <form class="contact__content__form form" novalidate>
+          <input class="form__child" type="text" name="name" placeholder="Full name">
+          <!--- Styled in _request file--->
+          <input class="form__child" type="email" name="email" placeholder="Email">
+          <!--- Styled in _request file--->
+          <textarea class="form__child" name="message" placeholder="Your message" wrap='hard'></textarea>
+          <div class="checkbox-container ">
+            <input type="checkbox" name="agree-terms">
+            <span>I have read and agree with Evolo's stated</span>
+            <a href="#">Privacy Policy</a>
+            <span>and</span>
+            <a href="#">Terms & Conditions</a>
+          </div>
+          <!--- Styled in _request file--->
+          <button type="submit" class="form__submit ">Request</button>
+          <!--- Styled in _request file--->
+        </form>
+
       </div>
     </div>
   </section>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGrUDf4_uzAgrXWqWg_5-eI7wEo7jQ26I&callback=initMap"
-    async defer></script>
-  <script src="js/map.js"></script>
+
   <script src="https://kit.fontawesome.com/a90e667ff5.js"></script>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
