@@ -10,14 +10,13 @@ toggleMenu.addEventListener("click", () => {
   toggleMenu.classList.remove("main-nav__container--show");
 })
 const mainNav = document.querySelector(".main-nav");
-const returnBtn = document.querySelector(".return-btn");  //fixed btn
+const returnBtn = document.querySelector(".return-btn"); //fixed btn
 const header = document.querySelector(".header");
 
 
 window.addEventListener("scroll", () => {
-  
+
   if (window.innerWidth >= 992 && window.scrollY <= 60) {
-    //change fixed menu
     mainNav.classList.add("main-nav--highest");
   } else mainNav.classList.remove("main-nav--highest");
 
@@ -102,34 +101,34 @@ $(document).ready(function () {
     dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
     responsive: [{
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
     ]
   });
 });
