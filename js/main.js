@@ -33,6 +33,15 @@ const backgroundModal = document.querySelector(".modal");
 const modalCloseBtn = document.querySelector(".modal__content__btn");
 const modalRowContent = document.querySelector(".modal-row");
 const modalContainerContent = document.querySelector(".modal-container");
+const moveToRequest = document.querySelector('.moveToRequestBtn');
+const backBtn = document.querySelector('.backBtn');
+
+const closeModal = () => {
+  modalRowContent.classList.remove("modal-row--active");
+  backgroundModal.classList.remove("modal--active");
+  modalContainerContent.classList.remove("modal-container--active");
+}
+
 
 modalOpenBtn.forEach(btn =>
   btn.addEventListener("click", () => {
@@ -42,12 +51,9 @@ modalOpenBtn.forEach(btn =>
     backgroundModal.classList.add("modal--active");
   })
 );
-modalCloseBtn.addEventListener("click", () => {
-  modalRowContent.classList.remove("modal-row--active");
-  backgroundModal.classList.remove("modal--active");
-  modalContainerContent.classList.remove("modal-container--active");
-});
-
+modalCloseBtn.addEventListener("click", closeModal);
+moveToRequest.addEventListener('click', closeModal);
+backBtn.addEventListener('click', closeModal);
 
 // video popUp
 const videoLink = document.querySelector(".video-frame__content__reference")
